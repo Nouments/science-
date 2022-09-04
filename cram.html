@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cram.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="section-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Projet javascript</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="sec.html">Second degrée</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cram.html">système d'équation à trois inconnues</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="circ.html">Eléctronique</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="section-contact" id="contact">
+        <div class="container">
+            <img src="assets/image/cram2.png" id="gg" alt=" ">
+            <h2>Système à trois inconnues</h2>
+
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput1 " class="form-label ">entrer les coefficients de x:</label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder=" a1 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput2 " class="form-label "></label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="a2 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput1 " class="form-label "></label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="a3 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput1 " class="form-label ">entrer les coefficients de y:</label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="b1 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput2 " class="form-label "></label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="b2 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput1 " class="form-label "></label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="b3 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput1 " class="form-label ">entrer les coefficients de z:</label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="c1 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput2 " class="form-label "></label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="c2 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput1 " class="form-label "></label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="c3 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput1 " class="form-label ">entrer les costantes d:</label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="d1 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput2 " class="form-label "></label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="d2 ">
+            </div>
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput1 " class="form-label "></label>
+                <input type="number " class="form-control " id="exampleFormControlInput " class="coeff " placeholder="d3 ">
+            </div>
+
+
+            <button class="btn btn-primary " onclick="cram() ">Résoudre</button>
+        </div>
+        </div>
+        <h4>Résultats:</h4>
+        <div id="result ">
+            X=<span id="x "></span><br> Y=<span id="y "></span><br> Z=<span id="z "></span><br>
+
+        </div>
+        <footer class=" footer mt-auto py-3 bg-dark ">
+            <div class="container " id="foot ">
+                <span class="text-muted "><a href=" "><i class="bi bi-facebook "> Facebook </i></a></span>
+                <span class="text-muted "><a href=" "><i class="bi bi-instagram "> Instagram </i></a></span>
+                <span class="text-muted "><a href=" "><i class="bi bi-envelope "> Email </i></a></span>
+                <span class="text-muted "><a href=" "><i class="bi bi-whatsapp "></i> Whatsapp </a></span>
+
+            </div>
+        </footer>
+        <script src="node_modules/js/crame.js "></script>
+        <script src="node_modules/jquery/dist/jquery.min.js "></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+
+</body>
+
+</html>
